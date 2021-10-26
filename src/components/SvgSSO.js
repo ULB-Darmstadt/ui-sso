@@ -4,8 +4,8 @@ const SvgSSO = ({ width, height, colorStart, colorEnd }) =>
     
       <defs>
         <linearGradient id="IconGradient" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stop-color={colorStart} />
-          <stop offset="100%" stop-color={colorEnd} />
+          <stop offset="0%" stopColor={colorStart} />
+          <stop offset="100%" stopColor={colorEnd} />
         </linearGradient>
       </defs>
       
