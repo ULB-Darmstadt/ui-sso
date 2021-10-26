@@ -155,11 +155,11 @@ const IdpSelection = (props) =>
           <Col xs={12} md={10} lg={6} className={ classNames(classes['form-column'], classes['form-column-sso']) } >
             <Row center="xs">
               <Col xs={6} >
-                <SvgSSO width="200px" color="#FF0000" />
+                <SvgSSO width="200px" colorStart="#e98d27" colorEnd="#ba3710" />
                 <Headline
                   size="xx-large"
-                  tag="h1"
-                  data-test-h1
+                  tag="h2"
+                  data-test-h2
                 >
                   <FormattedMessage id="stripes-core.loginViaSSO" />
                 </Headline>

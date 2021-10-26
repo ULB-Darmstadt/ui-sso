@@ -1,0 +1,47 @@
+.idp-list-wrapper {
+	font-size: 1rem;
+	text-align: left;
+	padding:0;
+	margin:0;
+	height: 21em;
+  max-height: 21em;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.idp-list-wrapper::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.idp-list-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.175);
+}
+ 
+.idp-list-wrapper::-webkit-scrollbar-thumb {
+  background-color: #e98d27;
+  outline: 1px solid #ba3710;
+}
+
+.idp-list-wrapper > div {
+  padding:1em 0;
+  margin:0;
+  border: 1px solid var(--secondary);
+  border-width: 0 0 1px 0;
+}
+
+.idp-list-wrapper > div h3 {
+	font-size: 1rem;
+	margin: 0;
+  padding: 0;
+}
+
+.idp-list-wrapper > div p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.idp-list-wrapper > div button {
+  font-size: 1rem;
+  margin: 0.75em 0 0 0;
+}

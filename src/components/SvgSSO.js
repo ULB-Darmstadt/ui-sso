@@ -1,12 +1,11 @@
-const SvgSSO = ({ width, height, color }) => 
-  <svg height={height} width={width} fill={color}
-    xmlns="http://www.w3.org/2000/svg"
+const SvgSSO = ({ width, height, colorStart, colorEnd }) => 
+  <svg height={height} width={width} xmlns="http://www.w3.org/2000/svg"
     version="1.1" x="0px" y="0px" viewBox={`0 0 90 56.57`} >
     
       <defs>
         <linearGradient id="IconGradient" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stop-color="#e98d27"/>
-          <stop offset="100%" stop-color="#ba3710"/>
+          <stop offset="0%" stop-color={colorStart} />
+          <stop offset="100%" stop-color={colorEnd} />
         </linearGradient>
       </defs>
       
