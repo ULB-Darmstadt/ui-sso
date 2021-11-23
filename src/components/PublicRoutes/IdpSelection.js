@@ -121,7 +121,7 @@ const IdpSelection = () => {
     
     // Important that this is used as OKAPI adds a * cors header for none invoke based endpoints.
     // Not ideal but the only place apps are given control over their headers is when using this endpoint.
-    const config = await theKy.post(`_/invoke/tenant/${tenant}/saml/login`, {json: { stripesUrl, entityId }}).json();
+    const config = await theKy.post(`_/invoke/tenant/${tenant}/saml/login?entityID=${entityId}`, {json: { stripesUrl }}).json();
     if (config.bindingMethod !== 'POST') {
       // Assume Get and navigate the browser.
       window.open(config.location, '_self');
